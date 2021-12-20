@@ -6,7 +6,7 @@ The Frontend and Chatbot is operated on the localhost
 
 The Cinema Service and the Booking Service operates on their own individual docker container.
 
-![alt text](https://github.com/morganmliang/ALchatbot/images/arch.jpg "System Architecture")
+![alt text](https://github.com/morganmliang/AIchatbot/images/arch.jpg "System Architecture")
 
 ## Persisting Resources
 Sqlite3 is used as the databases to store our data. There are three databases in total that are used for this project. 
