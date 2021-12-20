@@ -129,9 +129,9 @@ The chatbot provides the following functionalities:
 
       h.	User enters confirmation
 
-      <strong> User can cancel the booking any time during this booking process </strong>
+      User can cancel the booking any time during this booking process.
       
-      <strong>  User can still ask about cinema and movie information when in the process of booking a ticket </strong>
+      User can still ask about cinema and movie information when in the process of booking a ticket.
       
 
 
@@ -146,11 +146,11 @@ The chatbot provides the following functionalities:
     d.	User enters confirmation
 
 
-    <strong> User can stop the ticket cancellation any time during this cancellation process </strong> 
+    User can stop the ticket cancellation any time during this cancellation process.
     
-    <strong> User can only cancel or make one booking at any one time. The user must cancel or complete its current ticket cancellation process or current booking process to make a new cancellation or booking </strong>
+    User can only cancel or make one booking at any one time. The user must cancel or complete its current ticket cancellation process or current booking process to make a new cancellation or booking.
     
-    <strong>  User can still ask about cinema and movie information when in the process of canceling a ticket </strong>
+    User can still ask about cinema and movie information when in the process of canceling a ticket.
     
     
     
