@@ -53,13 +53,13 @@ python -m http.server 8000
 
 The chatbot provides the following functionalities:
 
-1.	Greetings
+#### 1.	Greetings
 
     a. Replies back to simple user greeting. (Eg. Hello, Hi.)
     
     b. Also replies to simple statements about user feelings. (Eg. “I am happy.”, “I am sad”)
   
-2.	Cinema Information
+#### 2.	Cinema Information
 
     a.	Provides a list of cinemas that is current playing a specified movie
     
@@ -67,7 +67,7 @@ The chatbot provides the following functionalities:
     
     c.	Provides snack information of a cinema
     
-3.	Timeslots
+ #### 3.	Timeslots
 
     a.	Provides all the timeslots for a specified movie
     
@@ -89,7 +89,7 @@ The chatbot provides the following functionalities:
           
           vii.	Theatre type
           
-4.	Movies
+#### 4.	Movies
 
     a.	Shows movies that are currently showing for a specified cinema
     
@@ -99,7 +99,7 @@ The chatbot provides the following functionalities:
     
     d.	Search movie by description
     
-5.	Book a movie session
+#### 5.	Book a movie session
     
     a.	Provides a list of available timeslots that can be booked filtered for the user preferences
     
@@ -135,7 +135,7 @@ The chatbot provides the following functionalities:
       
 
 
-6.	Cancel a current movie reservation
+#### 6.	Cancel a current movie reservation
 
     a.	Provides a list of purchased tickets filtered for the user preferences
     
