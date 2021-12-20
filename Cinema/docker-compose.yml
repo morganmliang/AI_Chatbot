@@ -1,0 +1,10 @@
+version: '2'
+services:
+    service:
+        build: .
+        ports:
+            - "5001:5000"
+        volumes:
+            - .:/service
+        # environment:
+        #     - PORT:5001

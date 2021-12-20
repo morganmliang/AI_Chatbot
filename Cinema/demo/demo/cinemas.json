@@ -1,0 +1,70 @@
+{"1": {"name": "cinema1", 
+        "address": "Randwick", 
+         "phone": "029111111",
+         "snacks": ["chips", "hotdogs", "popcorn"],
+         "movies": [
+             {
+               "m_id": 1,
+               "cinema_name":"cinema1",
+               "name": "The Matrix",
+               "descripion": "Sick future movie"
+            },
+            {
+                "m_id": 2,
+                "cinema_name":"cinema1",
+                "name": "Dune",
+                "descripion": "Cool Film"
+            }, 
+            {
+                "m_id": 1,
+                "cinema_name":"cinema1",
+                "name": "Jungle Cruise",
+                "descripion": "Disney Movie"
+            }],
+        "location": "Maroubra"}, 
+"2": {"name": "cinema2", 
+        "address": "Botany", 
+         "phone": "0292222222",
+         "snacks": ["chips", "hotdogs", "popcorn"],
+         "movies": [{
+                "m_id": 1,
+                "cinema_name":"cinema2",
+                "name": "The Matrix",
+                "descripion": "Sick future movie"}
+            ,{
+               "m_id": 2,
+               "cinema_name":"cinema2",
+               "name": "Dune",
+               "descripion": "Cool Film"}
+            ,{
+               "m_id": 1,
+               "cinema_name":"cinema2",
+               "name": "Jungle Cruise",
+               "descripion": "Disney Movie"}
+            
+        ],
+        "location": "Eastlakes"}, 
+"3": {"name": "cinema3", 
+        "address": "Broadway", 
+         "phone": "0293333333",
+         "snacks": ["chips", "hotdogs", "popcorn"],
+         "movies": [
+            {"1": {
+                "m_id": 1,
+                "cinema_name":"cinema3",
+                "name": "The Matrix",
+                "descripion": "Sick future movie"}
+            , "2":{
+               "m_id": 2,
+               "cinema_name":"cinema3",
+               "name": "Dune",
+               "descripion": "Cool Film"}
+            , "3":{
+               "m_id": 1,
+               "cinema_name":"cinema3",
+               "name": "Jungle Cruise",
+               "descripion": "Disney Movie"}
+            }
+        ],
+        "location": "Newtown"}
+}

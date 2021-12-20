@@ -1,0 +1,89 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "description": "A cinema chatbot system interacting with users",
+    "title": "cinema chatbot system ",
+    "contact": {
+      "email": "morgan.liang@unsw.edu.au"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "basePath": "/v3",
+  "tags": [
+    {
+      "name": "chat",
+      "description": "Creating a chatbot",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "http://swagger.io"
+      }
+    }
+  ],
+  "paths": {
+    "/chatmessage": {
+      "get": {
+        "tags": [
+          "chat"
+        ],
+        "summary": "get user message",
+        "description": "Ask about cinemas, movies, booking tickets and cancelling tickets",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "userMessage",
+            "description": "query message from the user. Eg. Show me all the cinemas around me?",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "userName",
+            "description": "User name",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/BotMessage"
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "BotMessage": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "example": "Jack Kelly"
+        },
+        "answer": {
+          "type": "string",
+          "example": "Hi I am at your command"
+        }
+      },
+      "required": [
+        "answer"
+      ]
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}

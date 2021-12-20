@@ -1,0 +1,59 @@
+# -*- coding: utf-8 -*-
+from __future__ import absolute_import, print_function
+
+from flask import request, g
+
+from . import Resource
+from .. import schemas
+import json
+import copy
+import sqlite3 as sql
+
+#DATABASE =  'C:\\Users\morga\OneDrive\Desktop\COMP9322\Assignment2\booking\database.db'
+DATABASE = "/service/database.db"
+
+class Timeslots(Resource):
+
+    def get(self):
+
+        tab = query_db('SELECT * FROM timeslots')
+
+        timeslot_list = []
+
+
+        for slot in tab:
+            t_dict= {}
+            t_dict['timeslot_id'] = slot['timeslot_id']
+            t_dict['m_id'] = slot['m_id']
+            t_dict['cinema_name'] = slot['cinema_name']
+            t_dict['theatre_type'] = slot['theatre_type']
+            t_dict['start_time'] = slot['start_time']
+            t_dict['end_time'] = slot['end_time']
+            t_dict['day'] = slot['day']
+            t_dict['max_seats'] = slot['max_seats']
+            t_dict['avail_seats'] = slot['avail_seats']
+            t_dict['movie_name'] = slot['m_name']
+            print(t_dict)
+            timeslot_list.append(t_dict)
+
+        if(len(timeslot_list)==0):
+            print("is is a error")
+            return None, 404, None
+
+        return timeslot_list,200, None
+
+
+
+
+
+def query_db(query, args=(), one=False):
+    cur = get_db().execute(query, args)
+    rv = cur.fetchall()
+    cur.close()
+    return (rv[0] if rv else None) if one else rv
+
+
+def get_db():
+    db =  sql.connect(DATABASE)
+    db.row_factory = sql.Row
+    return db
